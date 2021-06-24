@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: url('public.jpg') no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+.wrapper{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(5px);
+    width: 380px;
+    border-radius: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+.title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.field input{
+    width: 100%;
+    height:50px;
+    font-size: 20px;
+    padding-left: 20px;
+    outline: none;
+}
+.field span{
+    transform: translate(0 , 35px);
+    padding-left: 5px;
+}
+.link-pass a ,.link-signup a{
+    text-decoration: none;
+    color: #079992;
+}
+.link-pass a:hover ,.link-signup a:hover{
+    text-decoration: underline;
+}
+.field input[type="submit"]{
+    background: #0abde3;
+    padding-left: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #54a0ff;
+    margin: 15px 0 10px 0;
+    cursor: pointer;
+}
+.with{
+    text-align: center;
+    font-size: 20px;
+    color:#fff;
+    margin-bottom: 10px;
+}
+.link-with{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: 600;
+}
+.faecbook , .instagram{
+    padding: 10px;
+    background: #0984e3; 
+    width: 50%;
+    color: #fff;
+    cursor: pointer; 
+}
+.instagram{
+    background: #ef5777;
+    margin-left: 10px;
+}
+.faecbook i , .instagram i{
+    margin-right: 10px;
+}
+.link-signup{
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+.show{
+    position: absolute;
+    top: 33%;
+    left: 76%;
+    cursor: pointer;
+    display: none;
+}
+.password:valid ~ .show{
+    display: block;
+}
